@@ -66,7 +66,7 @@ class ThreadPrinter implements Runnable{
 		
 		ta.start();
 		try {
-			ta.sleep(100);
+			ta.sleep(100);    //通过采取sleep()方法，保证A B C 线程一次开启。
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
